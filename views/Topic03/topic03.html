@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>LẬP TRÌNH C CƠ BẢN</title>
+  </head>
+  <body>
+    <h1>Chủ đề 3: Các cấu trúc rẽ nhánh</h1>
+    <h2>Video</h2>
+    <p>Đang cập nhật...</p>
+    <br>
+    <h2>Bài giảng</h2>
+    <iframe src="https://www.slideshare.net/slideshow/embed_code/key/njlydN0OJ1SrkX" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    <br>
+    <h2>Bài tập</h2>
+    <h3>Bài tập cơ bản 3.1 - if</h3>
+    <p>Đọc vào chiều cao (cm) và cân nặng (kg) của bạn. Biết rằng:</p> 
+    <p><c>cân nặng tiêu chuẩn = (chiều cao - 100) × 0.9</c></p>
+    <p>Hãy tính cân nặng tiêu chuẩn đối với chiều cao của bạn. Và, nếu bạn nặng hơn cân nặng tiêu chuẩn 8kg thì ra thông báo "Ban hoi map do!"</p>
+    <p>Kết quả thực hiện:</p>
+    <pre>
+     ./coban31
+     Chieu cao: 177.5
+     Can nang: 65.5
+     Can nang chuan: 69.8kg
+
+     ./coban31
+     Chieu cao: 175.0
+     Can nang: 85.5
+     Can nang chuan: 67.5kg 
+     Ban hoi map do!
+    </pre>
+    <h3>Bài tập cơ bản 3.2 - if else</h3>
+    <p>Đọc vào điểm thi cuối kì của bạn (thang điểm 100). Viết chương trình hiển thị xếp loại (A+,A,B,C,F).</p>
+    <ul>
+    <li>Nếu điểm không nằm trong phạm vi [0 - 100] thì thông báo "Điểm sai!"</li>
+    <li>Dùng if else để xếp loại.</li>
+    <li>Cách xếp loại theo điểm như sau:</li>
+    </ul>
+    <table>
+    <caption>Dùng cho bài tập 3.2 </caption>
+      <tr>
+      <th>Điểm</th>
+      <th>Loại</th>
+      </tr>
+      <tr>
+      <td>90~100</td>
+      <td>A+</td>
+      </tr>
+      <tr>
+      <td>80~89</td>
+      <td>A</td>
+      </tr>
+      <tr>
+      <td>70~79</td>
+      <td>B</td>
+      </tr>
+      <tr>
+      <td>60~69</td>
+      <td>C</td>
+      </tr>
+      <tr>
+      <td>0~59</td>
+      <td>F</td>
+      </tr>
+      <tr>
+      <td>Ngoài phạm vi trên</td>
+      <td>Lỗi</td>
+      </tr>
+    </table>
+    Kết quả thực hiện:
+    <pre>
+     ./coban32
+     Diem [0-100]: 93
+     Loai: A+ 
+     
+     ./coban32
+     Diem [0-100]: 120
+     Diem sai!
+    </pre>
+    <h3>Bài tập cơ bản 3.3 - Biểu thức điều kiện</h3>
+    <p>Nhập vào tháng, xem tháng thuộc mùa nào. Ở đây: Xuân (Tháng 3~5), Hạ (Tháng 6~8), Thu (Tháng 9~11) và Đông (Tháng 1, 2, 12). Yêu cầu:</p>
+    <ul>
+    <li>Dùng 1 lần if, 3 lần else if, và 1 lần else．</li>
+    <li>Không dùng phép chia lấy phần dư %</li>
+    <li>Nếu nhập tháng ngoài phạm vi [1-12] thì thông báo: "khong co thang nay!"</li>
+    </ul>
+    Kết quả thực hiện:
+    <pre>
+      ./coban33
+     Thang: 3
+     la mua ha
+
+      ./coban33
+     Thang: 12
+     la mua dong
+
+      ./coban33
+     Thang: 20
+     khong co thang nay!
+     </pre>
+    <h3>Bài tập cơ bản 3.4 - switch</h3>
+    <p>Tháng 2/2015 có 28 ngày. Chủ nhật là ngày đầu tiên của tháng. Hãy viết chương trình đọc vào 1 ngày nào đó trong phạm vi [1-28]. Hiển thị thứ của ngày. Giả sử <strong>date</strong> là ngày, <strong>day</strong> là thứ, <strong>day1st</strong> là thứ đầu tiên của tháng. Các thứ được đánh số thứ tự là: 0:Sun, 1:Mon, 2:Tue, 3:Wed, 4:Thu, 5:Fri, 6:Sat. Thứ sẽ được tính theo công thức:</p>
+    <p>day = (date + day1st - 1) % 7</p>
+    Kết quả thực hiện chương trình:
+    <pre>
+    ./coban34
+    Chuyen doi ngay sang thu cua thang 2/2015.
+    Nhap vao mot ngay cua thang 2/2015 [1-28]: 24
+    Do la Tue
+
+    ./coban34
+    Chuyen doi ngay sang thu cua thang 2/2015.
+    Nhap vao mot ngay cua thang 2/2015 [1-28]: 33
+    Thang 2/2015 chi co 28 ngay!
+
+    ./coban34
+    Chuyen doi ngay sang thu cua thang 2/2015.
+    Nhap vao mot ngay cua thang 2/2015 [1-28]: -4
+    Ngay bat dau cua thang la ngay 1!
+    </pre>
+  <h3>Bài tập nâng cao 3.5 - if else</h3>
+  <p>Hãy đọc vào vào 3 số nguyên. Kiểm tra xem 3 số này có phải là độ dài các cạnh của tam giác thường, tam giác cân, tam giác vuông, hay tam giác đều không.</p>
+Kết quả thực hiện:
+  <pre>
+  ./nangcao35
+  Nhap vao do dai 3 canh cua tam giac.
+  Do dai canh 1:  3
+  Do dai canh 2:  3
+  Do dai canh 3:  7
+  Khong phai do dai 3 canh cua 1 tam giac!
+
+  ./nangcao35
+  Nhap vao do dai 3 canh cua tam giac.
+  Do dai canh 1:  3
+  Do dai canh 2:  3
+  Do dai canh 3:  5
+  La tam giac can.
+
+  ./nangcao35
+  Nhap vao do dai 3 canh cua tam giac.
+  Do dai canh 1:  3
+  Do dai canh 2:  4
+  Do dai canh 3:  5
+  La tam giac vuong.
+
+  ./nangcao35
+  Nhap vao do dai 3 canh cua tam giac.
+  Do dai canh 1:  3
+  Do dai canh 2:  3
+  Do dai canh 3:  3
+  La tam giac deu.
+  </pre>
+  <h3>Bài tập nâng cao 3.6 - switch</h3>
+  <p>Hãy viết chương trình để sửa thông tin cho 1 sinh viên. Một sinh viên có các thông tin: số thẻ sinh viên ( gồm 4 chữ số), điểm tiếng Anh, và điểm toán. Chương trình sẽ hiển thị 1 menu để thông báo cho người sử dụng chọn sửa thông tin nào:</p>
+  <pre>
+   [0] Sua so the
+   [1] Sua diem tieng Anh
+   [2] Sua diem toan
+  </pre>
+  <p>Dùng switch trong chương trình. Chú ý xử lí khi người dùng nhập số ngoài phạm vi cho phép chỉnh sửa, nhập điểm ngoài phạm vi [0,100].</p>
+  Kết quả thực hiện:
+  <pre>
+  ./nangcao36
+  Thong tin hien tai cua sv la: 
+  So the: 1234, Diem tieng Anh: 94, Diem toan: 78
+
+  Menu sua thong tin sinh vien:
+  [0] Sua so the
+  [1] Sua diem tieng Anh
+  [2] Sua diem toan
+
+  Cho biet ban muon sua muc nao [0, 1, 2]: 0
+  Hay nhap vao so the moi: 7777
+  Thong tin hien tai cua sinh vien la: 
+  So the: 7777, Diem tieng Anh: 94, Diem toan: 78
+
+
+  ./nangcao36
+  Thong tin hien tai cua sv la: 
+  So the: 1234, Diem tieng Anh: 94, Diem toan: 78
+
+  Menu sua thong tin sinh vien:
+  [0] Sua so the
+  [1] Sua diem tieng Anh
+  [2] Sua diem toan
+
+  Cho biet ban muon sua muc nao [0, 1, 2]: 1
+  Hay nhap vao diem tieng Anh moi: 180
+  Diem sai!
+
+
+  ./nangcao36
+  Thong tin hien tai cua sv la: 
+  So the: 1234, Diem tieng Anh: 94, Diem toan: 78
+
+  Menu sua thong tin sinh vien:
+  [0] Sua so the
+  [1] Sua diem tieng Anh
+  [2] Sua diem toan
+
+  Cho biet ban muon sua muc nao [0, 1, 2]: 2
+  Hay nhap vao diem toan moi: 40
+  Thong tin hien tai cua sinh vien la: 
+  So the: 1234, Diem tieng Anh: 94, Diem toan: 40
+
+
+  ./nangcao36
+  Thong tin hien tai cua sv la: 
+  So the: 1234, Diem tieng Anh: 94, Diem toan: 78
+
+  Menu sua thong tin sinh vien:
+  [0] Sua so the
+  [1] Sua diem tieng Anh
+  [2] Sua diem toan
+
+  Cho biet ban muon sua muc nao [0, 1, 2]: 4
+  Khong co muc nay!
+  </pre>
+  </body>
+</html>

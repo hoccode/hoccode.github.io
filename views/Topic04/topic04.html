@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>LẬP TRÌNH C CƠ BẢN</title>
+  </head>
+  <body>
+    <h1>Chủ đề 4: Các cấu trúc lặp</h1>
+    <h2>Video</h2>
+    <p>Đang cập nhật...</p>
+    <br>
+    <h2>Bài giảng</h2>
+    <iframe src="https://www.slideshare.net/slideshow/embed_code/key/njlydN0OJ1SrkX" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    <br>
+    <h2>Bài tập</h2>
+    <h3>Bài tập cơ bản 4.1 - while</h3>
+    <p>Hãy xây một pyramid từ các viên đá hình lập phương giống như hình dưới.</p>
+    <table>
+      <tbody>
+        <tr>
+          <td><img src="img/pyramid.png" alt="Pyramid 7 tầng"></td>
+        </tr>
+      </tbody>
+      <caption>Hình 1: Pyramid 7 tầng</caption>
+    </table>
+    <p>Hãy đọc vào số lượng viên đá. Viết chương trình để tính toán số tầng của pyramid có thể xây dược. Số tầng được tính từ trên xuống. Tầng trên cùng là tầng 1, tầng tiếp theo là tầng 2. Số viên đá để xây 1 tầng là 1, để xây 2 tầng là 3.</p>
+    Kết quả thực hiện:
+    <pre>
+    ./coban41
+    So vien da: 2
+    Xay duoc 1 tang
+    Con du 1 vien da
+
+    ./coban41
+    So vien da: 6
+    Xay duoc 3 tang
+    Con du 0 vien da
+
+    ./coban41
+    So vien da: 11
+    Xay duoc 4 tang
+    Con du 1 vien da
+
+    ./coban41
+    So vien da: -1
+    Nhap sai!
+    </pre>
+    <h3>Bài tập cơ bản 4.2 - for và break</h3>
+    <p>Đọc vào một số từ bàn phím. Kiểm tra xem số này có phải là số nguyên tố không. Dùng for và break trong chương trình.</p>
+    Kết quả thực hiện:
+    <pre>
+    ./coban42
+    Nhap so nguyen 1
+    Nhap so nguyen -1
+    Nhap so nguyen 2
+    2 la so nguyen to
+
+    ./coban42
+    Nhap so nguyen 10
+    10 khong phai la so nguyen to
+
+    ./coban42
+    Nhap so nguyen 3
+    3 la so nguyen to
+    </pre>
+    <h3>Bài tập cơ bản 4.3 - while</h3>
+    <p>Giả sử chiếc ôtô trò chơi được gắn một cây bút ở phía sau. Vị trí ban đầu của chiếc ôtô như hình 8. Hãy lập trình đường đi cho ôtô để cây bút vẽ ra các đa giác đều, mỗi cạnh 1 mét. Xem ví dụ ở hình 8.</p>
+    <table>
+      <tbody>
+        <tr>
+          <td><img src="img/angle.png" alt="Góc chuyển"></td>
+        </tr>
+      </tbody>
+      <caption>Hình 2: Góc chuyển</caption>
+    </table>
+     
+    <p>Giả sử muốn vẽ đa giác đều n cạnh, thì góc mà ôtô cần phải quay sẽ là 360/n. Chẳng hạn, để vẽ hình tam giác đều, ôtô sẽ quay 120 độ theo chiều kim đồng hồ, đi thẳng 1 m, quay 120 độ, đi thẳng 1 m, quay 120 độ, và đi thẳng 1 m.</p>
+    <table>
+      <tbody>
+        <tr>
+          <td><img src="img/auto.png" alt="Các đa giác đều được vẽ"></td>
+        </tr>
+      </tbody>
+      <caption>Hình 3: Các đa giác đều được vẽ</caption>
+    </table>
+    Kết quả thực hiện:
+    <pre>
+    ./coban43
+    So canh cua da giac: 4
+    quay phai 90 do, thang 1 m
+    quay phai 90 do, thang 1 m
+    quay phai 90 do, thang 1 m
+    quay phai 90 do, thang 1 m
+
+    ./coban43
+    So canh cua da giac: 3
+    quay phai 120 do, thang 1 m
+    quay phai 120 do, thang 1 m
+    quay phai 120 do, thang 1 m
+
+    ./coban43
+    So canh cua da giac: 8
+    quay phai 45 do, thang 1 m
+    quay phai 45 do, thang 1 m
+    quay phai 45 do, thang 1 m
+    quay phai 45 do, thang 1 m
+    quay phai 45 do, thang 1 m
+    quay phai 45 do, thang 1 m
+    quay phai 45 do, thang 1 m
+    quay phai 45 do, thang 1 m
+
+    ./coban43
+    So canh cua da giac: 0
+    So canh cua da giac: -1
+    So canh cua da giac: 12
+    quay phai 30 do, thang 1 m
+    quay phai 30 do, thang 1 m
+    quay phai 30 do, thang 1 m
+    quay phai 30 do, thang 1 m
+    quay phai 30 do, thang 1 m
+    quay phai 30 do, thang 1 m
+    quay phai 30 do, thang 1 m
+    quay phai 30 do, thang 1 m
+    quay phai 30 do, thang 1 m
+    quay phai 30 do, thang 1 m
+    quay phai 30 do, thang 1 m
+    quay phai 30 do, thang 1 m
+    </pre>
+    <h3>Bài tập cơ bản 4.4 - sự dụng linh hoạt các biến</h3>
+    <p> Hãy đọc vào giá trị cho 1 biến nguyên. Hãy tạo 1 tam giác các kí tự sao * như ở dưới. 
+    <ul>
+    <li>Số dòng là giá trị đọc vào.</li>
+    <li>Dùng for.</li>
+    <li>Nếu đọc vào là số không dương thì thông báo nhập sai và kết thúc chương trình.</li>
+    </ul>
+    Kết quả thực hiện:
+    <pre>
+    ./coban44
+    So nguyen: 0
+    ko phai so nguyen duong!
+
+    ./coban44
+    So nguyen: -3
+    ko phai so nguyen duong!
+
+    ./coban44
+    So nguyen: 4
+    ---*
+    --***
+    -*****
+    *******
+
+    ./coban44
+    So nguyen: 9
+    --------*
+    -------***
+    ------*****
+    -----*******
+    ----*********
+    ---***********
+    --*************
+    -***************
+    *****************
+    </pre>
+    Hãy thay đổi chương trình để kết quả đạt được là:
+    <pre>
+    ./coban44
+    So nguyen: 9
+            *
+           ***
+          *****
+         *******
+        *********
+       ***********
+      *************
+     ***************
+    *****************
+    </pre>
+    <h3>Bài tập nâng cao 4.5 - các cấu trúc lặp lồng nhau (1)</h3>
+    <p>Hãy vẽ hoa văn như ở dưới, cho biết số dòng đọc vào từ bàn phím là số lẻ không âm.</p>
+    Kết quả thực hiện: 
+    <pre>
+    ./nangcao45
+    Nhap so hang (so le khong am): 2
+    Nhap so hang (so le khong am): 0
+    Nhap so hang (so le khong am): 7
+    *-----*
+    -*---*-
+    --*-*--
+    ---*---
+    --*-*--
+    -*---*-
+    *-----*
+    </pre>
+    <h3>Bài tập nâng cao 4.6 - các cấu trúc lặp lồng nhau (2)</h3>
+    <p>Hãy hiển thị lịch của 1 tháng nào đó của năm 2015. Ngày đầu tiên của tháng, thứ của ngày đầu tiên của tháng, số ngày của tháng được đọc vào từ bàn phím.</p>
+    Kết quả thực hiện:
+    <pre>
+    ./nangcao46
+    Ngay 1 cua thang la thu (Sun(1) Mon(2) Tue(3) Wed(4) Thu(5) Fri(6) Sat(7))?: 4
+    Thang co may ngay (28,29,30,31)?: 31
+
+      SUN MON TUE WED THU FRI SAT
+                    1   2   3   4
+        5   6   7   8   9  10  11
+       12  13  14  15  16  17  18
+       19  20  21  22  23  24  25
+       26  27  28  29  30  31
+     
+    </pre>
+    <p><strong>Tự nâng cao kĩ năng:</strong> Sau khi hoàn thành chương trình theo yêu cầu như trên, hãy nâng cấp chương trình để hiển thị lịch của 1 năm nào đó, cho biết thứ của ngày 1/1 đọc vào từ bàn phím.</p>
+  </body>
+</html>
