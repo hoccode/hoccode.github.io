@@ -10,7 +10,132 @@
     <p>Đang cập nhật...</p>
     <br>
     <h2>Bài giảng</h2>
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/glBJ5QQX5na6Nw" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/tuanthanh13/baigiang041-mang" title="Baigiang041 mang" target="_blank">Baigiang041 mang</a> </strong> from <strong><a href="//www.slideshare.net/tuanthanh13" target="_blank">Khoa Tin</a></strong> </div>
     <br>
     <h2>Bài tập</h2>
+    <h3>Bài tập cơ bản 5.1 - Chỉ số (index) và giá trị (value) của phần tử của mảng</h3>
+    <p> Hãy khai báo mảng để lưu 10 số nguyên, và gán giá trị đầu cho các phần tử của mảng như ở bảng 5.1. Sau đó, hiển thị mảng theo thứ tự giảm dần của chỉ số.</p>
+     <div align="CENTER">
+    <TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+    <CAPTION><STRONG>Bảng 5.1:</STRONG>
+    Chỉ số và giá trị của mảng</CAPTION>
+    <TR><TD ALIGN="CENTER">Chỉ số (index) </TD>
+    <TD ALIGN="CENTER">0</TD>
+    <TD ALIGN="CENTER">1</TD>
+    <TD ALIGN="CENTER">2</TD>
+    <TD ALIGN="CENTER">3</TD>
+    <TD ALIGN="CENTER">4</TD>
+    <TD ALIGN="CENTER">5</TD>
+    <TD ALIGN="CENTER">6</TD>
+    <TD ALIGN="CENTER">7</TD>
+    <TD ALIGN="CENTER">8</TD>
+    <TD ALIGN="CENTER">9</TD>
+    </TR>
+    <TR><TD ALIGN="CENTER">Giá trị (value) </TD>
+    <TD ALIGN="CENTER">10</TD>
+    <TD ALIGN="CENTER">5</TD>
+    <TD ALIGN="CENTER">25</TD>
+    <TD ALIGN="CENTER">-10</TD>
+    <TD ALIGN="CENTER">7</TD>
+    <TD ALIGN="CENTER">0</TD>
+    <TD ALIGN="CENTER">52</TD>
+    <TD ALIGN="CENTER">27</TD>
+    <TD ALIGN="CENTER">-8</TD>
+    <TD ALIGN="CENTER">1</TD>
+    </TR>
+    </TABLE>
+    </DIV>
+    Kết quả thực hiện:
+    <PRE>
+    ./coban51
+    Chi so 9: noi dung la 1
+    Chi so 8: noi dung la -8
+    (...)
+    Chi so 1: noi dung la 5
+    Chi so 0: noi dung la 10                                     
+    </PRE>
+    <h3>Bài tập cơ bản 5.2 - Kích thước của mảng (size)</h3>
+    <p> Khai báo một mảng số nguyên để lưu các số nguyên. Tuy nhiên, do không biết trước sẽ lưu bao nhiêu số nguyên nên ta phải khai báo mảng với kích thước tương đối lớn, chẳng hạn, 256. Dùng <TT>#define</TT> để chỉ định kích thước này. Khi chạy chương trình, ta sẽ đọc vào kích thước dùng thật sự. Nội dung của các phần tử cũng được đọc vào từ bàn phím. Hiển thị chỉ số và nội dung của các phần tử của mảng.</p>
+    Kết quả thực hiện:
+    <PRE>
+    ./coban52
+    So phan tu mang muon dung (cuc dai: 256): 5
+    Vi tri 0: 10
+    Vi tri 1: 11
+    Vi tri 2: 12
+    Vi tri 3: 13
+    Vi tri 4: 14
+    Chi so 4: noi dung la 14
+    Chi so 3: noi dung la 13
+    Chi so 2: noi dung la 12
+    Chi so 1: noi dung la 11
+    Chi so 0: noi dung la 10
+    </PRE>
+    <h3>Bài tập cơ bản 5.3 - Phần tử cực đại của mảng</h3>
+    <p>Hãy khai báo mảng với số lượng phần tử cực đại là 100. Hãy đọc vào số phần tử thực dùng và giá trị của các phần tử này. Hiển thị index và giá trị của phần tử cực đại.</p>
+    Kết quả thực hiện:
+    <PRE>
+    ./coban53
+    So phan tu mang muon dung (cuc dai: 256): 5
+    Vi tri 0: 3
+    Vi tri 1: 0
+    Vi tri 2: -56
+    Vi tri 3: 4
+    Vi tri 4: 10
+    Phan tu lon nhat co index la 4, gia tri la 10
+    </PRE>
+    <h3>Bài tập cơ bản 5.4 - Tính toán với các phần tử của mảng</h3>
+    <p> Có thể dùng mảng một chiều để lưu các giá trị cho vector.Hãy nhập các giá trị cho vector và tính vector sai lệch. Giả sử average là giá trị trung bình của các chiều của vector. Vector sai lệch của một vector là vector mà giá trị các chiều là giá trị của các chiều trừ đi average.</p>
+    Ví dụ thực hiện:
+    <PRE>
+    ./coban54.exe
+    So phan tu mang muon dung (cuc dai: 256): 5
+    Vi tri 0: 3
+    Vi tri 1: 4
+    Vi tri 2: 5
+    Vi tri 3: 6
+    Vi tri 4: 7
+    Vector a:
+    3.000   4.000   5.000   6.000   7.000
+    Vector sai lech cua a:
+    -2.000   -1.000   0.000   1.000   2.000
+    </PRE>
+    <h3>Bài tập nâng cao 5.5 - Tính toán với nhiều mảng</h3>
+    <p>Viết chương trình tính tích vô hướng của 2 vector n chiều. Số chiều n và giá trị của mỗi chiều được đọc vào từ bàn phím. Dùng <code>#define</code> để chỉ định số chiều lớn nhất.</p>
+    <B>Gợi ý:</B>
+    <p>Tích vô hướng của vector x = (x1,x2,...,xn) và vector y = (y1, y2, y3,...,yn) là x.y = x1.y1 + x2.y2 + ... + xn.yn</p>
+    <B>Kết quả thực hiện:</B>
+    <PRE>
+    ./nangcao55
+    So chieu cua vector?(cuc dai 500): 3
+    Vector x, chieu 1: 3
+    Vector x, chieu 2: 4
+    Vector x, chieu 3: 5
+    Vector y, chieu 1: -4
+    Vector y, chieu 2: 2
+    Vector y, chieu 3: 6
+    Tich vo huong cua x va y la 38．
+    </PRE>
+    <h3>Bài tập nâng cao 5.6 - Di chuyển các phần tử mảng</h3>
+    <p>Hãy viết chương trình đọc vào 1 dãy các số nguyên không âm và lưu vào mảng 1 chiều. Việc đọc kết thúc khi nhập vào số 0.Hiển thị mảng theo thứ tự tăng dần các giá trị của phần tử.</p>
+    <b>Gọi ý:</b>
+    Mỗi khi nhập vào 1 số, xử lí số này như sau:
+    <p> 1. So sánh số này với các số đã có trong mảng, theo thứ tự từ index 0</p>
+    <p> 2. Khi tìm được số lớn hơn số này, giả sử ở ô thứ i, thì di chuyển tất cả các phần tử, kể từ phần tử này về sau mảng 1 phần tử.</p>
+    <p> 3. Gán giá trị mới nhập vào vào vị trí i</p>
+    <p> 4. Nếu là 0 thì kết thúc, hiển thị mảng đã sắp xếp. Nếu khác 0 thì tiếp tục lại bước 1.</p>
+    <b>Kết quả thực hiện:</b>
+    <PRE>
+     ./nangcao56
+     Nhap so nguyen: 17
+     Nhap so nguyen: 3
+     Nhap so nguyen: 9
+     Nhap so nguyen: 4
+     Nhap so nguyen: 0
+     Mang da sap xep:  3, 4, 9, 17
+    </PRE>
+
+
+
   </body>
 </html>
